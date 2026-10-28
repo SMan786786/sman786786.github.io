@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8f6">
-  <meta name="description" content="Mansoor Shaik — Software Developer. Portfolio, selected projects, skills, and contact information.">
-  <title>Mansoor Shaik | Software Developer</title>
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Mansoor Shaik is a software developer interested in thoughtful digital products, practical problem-solving, and reliable software.">
+  <meta property="og:title" content="Mansoor Shaik — Software Developer">
+  <meta property="og:description" content="A considered collection of software projects, skills, and ideas by Mansoor Shaik.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sman786786.github.io/">
+  <title>Mansoor Shaik — Software Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%231d2a24'/%3E%3Ctext x='20' y='25' font-family='Arial' font-size='13' font-weight='700' text-anchor='middle' fill='%23d7f29b'%3EMS%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,35 +18,124 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><nav class="nav wrap" aria-label="Main navigation">
-  <a class="brand" href="#home"><span class="brand-mark">MS</span><span>Mansoor Shaik</span></a>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span></button>
-  <div class="nav-links" id="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">☾ <span>Theme</span></button><a class="nav-cta" href="resume.pdf">Resume ↗</a></div>
-</nav></header>
-<main id="main">
-<div class="scroll-progress" aria-hidden="true"></div><section class="hero wrap" id="home">
-  <div class="hero-copy"><p class="eyebrow hero-eyebrow"><span class="dot"></span> SOFTWARE DEVELOPER <span class="slash">/</span> PORTFOLIO</p>
-    <h1>Hi, I’m <span>Mansoor Shaik.</span><br>Building thoughtful<br class="desktop-break"> digital experiences.</h1>
-    <p class="intro">I’m a software developer who enjoys turning complex problems into reliable, useful, and easy-to-use software. This is a home for my work, skills, and the things I’m learning.</p>
-    <div class="actions"><a class="button dark" href="#projects">Explore my work ↓</a><a class="text-link" href="#contact">Let’s connect ↗</a></div>
-    <div class="hero-meta"><span>⌘ &nbsp; Software development</span><span>◎ &nbsp; Open to meaningful work</span></div>
-  </div>
-  <aside class="profile-card"><div class="card-top"><span>PROFILE / 001</span><span class="spark">✳</span></div><div class="avatar">MS<span class="avatar-orbit"></span></div><h2>Mansoor Shaik</h2><p class="muted">Software Developer</p><hr><div class="detail"><span>FOCUS</span><strong>Building & problem-solving</strong></div><div class="detail"><span>APPROACH</span><strong>Curious · Practical · Iterative</strong></div><a class="github-link" href="https://github.com/SMan786786" target="_blank" rel="noopener">⌘ &nbsp; github.com/SMan786786 ↗</a><div class="grid-art"></div></aside>
-  <p class="hero-index">01 — INTRODUCTION</p>
-</section>
-<section class="section border-top" id="about"><div class="wrap two-col"><div><p class="eyebrow">01 / ABOUT</p><h2>A little about<br>how I work.</h2></div><div class="section-copy"><p class="lead">Good software should solve a real problem, feel intuitive to use, and be dependable behind the scenes.</p><p>I’m Mansoor, a software developer interested in designing and building practical digital solutions. I value clear communication, thoughtful implementation, continuous learning, and code that other people can understand and maintain.</p><p>This portfolio is a growing collection of projects and experiments. As I add work, you’ll find the problem each project addresses, the tools I used, and what I learned along the way.</p><div class="principles"><div><span>01</span><strong>Think clearly</strong><p>Understand the problem before reaching for a solution.</p></div><div><span>02</span><strong>Build deliberately</strong><p>Keep the experience simple and the implementation solid.</p></div><div><span>03</span><strong>Keep improving</strong><p>Learn from feedback and refine the work over time.</p></div></div></div></div></section>
-<section class="section border-top" id="projects"><div class="wrap"><div class="section-title-row"><div><p class="eyebrow">02 / PROJECT SHOWCASE</p><h2>Selected projects.</h2></div><p class="section-note">A selection of web development and computer-vision projects.</p></div><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All work <span>03</span></button><button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web apps</button><button class="filter-btn" type="button" data-filter="vision" aria-pressed="false">Computer vision</button></div><div class="project-grid">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Mansoor Shaik, home"><span class="brand-mark">MS</span><span>Mansoor Shaik<span class="brand-period">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#projects">Work</a><a href="#skills">Toolkit</a><a href="#github">GitHub</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button>
+      </div>
+    </nav>
+  </header>
 
-<article class="project-card reveal" data-category="web"><div class="project-visual mint"><span>◇</span><small>FULL STACK / 02</small><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-info"><div class="project-title"><h3>E-commerce Website</h3><span>01</span></div><p>An online headphone store built with React and Sanity, with product management and Stripe checkout integration.</p><div class="tags"><span>React</span><span>Sanity</span><span>Stripe</span></div><a class="project-link" href="https://hear-hub-headphones.vercel.app/" target="_blank" rel="noopener">View live project ↗</a></div></article>
-<article class="project-card reveal" data-category="web"><div class="project-visual peach"><span>⌁</span><small>FULL STACK / 03</small><div class="code-art">message: "Hello!"<br>status: delivered<br>typing: true</div></div><div class="project-info"><div class="project-title"><h3>Real-Time Chat Application</h3><span>02</span></div><p>A chat app using React and Chat Engine, featuring live messaging, typing indicators, and read receipts.</p><div class="tags"><span>React</span><span>Chat Engine</span></div><a class="project-link" href="https://drive.google.com/file/d/16mm2QfMqx17nbExz8j87MOfvkptyLtI9/view?usp=sharing" target="_blank" rel="noopener">View project demo ↗</a></div></article>
-<article class="project-card reveal" data-category="vision"><div class="project-visual lilac"><span>◎</span><small>COMPUTER VISION / 04</small><div class="mock-window"><b>Face mask detection</b><i></i><i class="short"></i></div></div><div class="project-info"><div class="project-title"><h3>Real-Time Face Mask Detection</h3><span>03</span></div><p>A computer-vision project using OpenCV and MobileNet to detect face masks, with a related research publication.</p><div class="tags"><span>OpenCV</span><span>MobileNet</span></div><a class="project-link" href="https://link.springer.com/chapter/10.1007/978-981-16-7330-6_39" target="_blank" rel="noopener">Read publication ↗</a></div></article>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SOFTWARE DEVELOPER <span class="eyebrow-divider">/</span> PORTFOLIO</p>
+        <h1 id="hero-title">Thoughtful code.<br><span>Useful experiences.</span></h1>
+        <p class="hero-intro">I’m Mansoor Shaik — a software developer who enjoys solving problems and building practical, user-friendly applications. I care about the details that make software clear, useful, and dependable.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Explore selected work <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="mailto:mansoorshaik0412@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="tiny-mark" aria-hidden="true">✳</span> Curious by nature. Practical by design.</div>
+      </div>
+      <aside class="hero-art" aria-label="A minimal visual composition representing thoughtful software development">
+        <div class="art-topline"><span>INDEPENDENT THINKING</span><span>001 — MS</span></div>
+        <div class="orbit-stage" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="orbit-core"><span>MS</span><i></i></div>
+          <span class="orbit-label label-one">IDEAS</span><span class="orbit-label label-two">BUILD</span><span class="orbit-label label-three">REFINE</span>
+        </div>
+        <div class="art-bottomline"><span>MAKE IT USEFUL</span><span class="art-star">✳</span><span>KEEP IT HUMAN</span></div>
+      </aside>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>INTRODUCTION</span></div>
+    </section>
 
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="wrap two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / A LITTLE CONTEXT</p>
+          <h2 id="about-title">Good work starts<br>with <em>good questions.</em></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lead">I’m interested in the space where logical problem-solving meets thoughtful product experiences.</p>
+          <p>My approach is to understand the problem first, keep the solution focused, and iterate with care. I enjoy learning new tools, breaking down complex challenges, and making applications that feel straightforward to use.</p>
+          <p>This site is a living portfolio. I’ll continue refining it as I document more of my work, experiments, and lessons learned.</p>
+          <a class="underlined-link" href="https://github.com/SMan786786" target="_blank" rel="noopener noreferrer">A little more on GitHub <span aria-hidden="true">↗</span></a>
+          <div class="principle-grid">
+            <article><span class="principle-number">01</span><h3>Understand</h3><p>Get clear on the real need before building.</p></article>
+            <article><span class="principle-number">02</span><h3>Make</h3><p>Choose simple, considered solutions.</p></article>
+            <article><span class="principle-number">03</span><h3>Improve</h3><p>Learn, test, and make the next pass better.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-work" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading-row reveal">
+          <div><p class="eyebrow">02 / PROJECTS</p><h2 id="projects-title">Selected <em>work.</em></h2></div>
+          <p class="section-aside">A small selection across web development and computer vision.</p>
+        </div>
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All projects <span>03</span></button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web development</button>
+          <button class="filter-btn" type="button" data-filter="vision" aria-pressed="false">Computer vision</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-art art-commerce"><div class="project-art-head"><span>PRODUCT / STORE</span><span>01</span></div><div class="commerce-display"><div class="headphone-shape"><span></span></div><div class="commerce-caption"><span>STUDIO SERIES</span><strong>Sound, considered.</strong><i></i><i></i></div></div><span class="art-index">A—01</span></div>
+            <div class="project-info"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>01 / 03</span></div><h3>E-commerce website</h3><p>An online headphone store described as using React, Sanity, and Stripe for product management and checkout.</p><div class="tag-list"><span>React</span><span>Sanity</span><span>Stripe</span></div><div class="project-actions"><button class="text-action" type="button" data-open-project="commerce">Project notes <span aria-hidden="true">↗</span></button><a class="text-action" href="https://hear-hub-headphones.vercel.app/" target="_blank" rel="noopener noreferrer">Open project <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="web">
+            <div class="project-art art-chat"><div class="project-art-head"><span>MESSAGES / LIVE</span><span>02</span></div><div class="chat-window"><div class="chat-top"><span class="chat-avatar">M</span><span><b>Conversation</b><small>Online</small></span><span class="chat-dots">•••</span></div><div class="chat-bubble bubble-left">Hey! Have you seen the update?</div><div class="chat-bubble bubble-right">Just looking now. Nice and clear.</div><div class="typing"><i></i><i></i><i></i><span>typing</span></div></div><span class="art-index">B—02</span></div>
+            <div class="project-info"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>02 / 03</span></div><h3>Real-time chat application</h3><p>A messaging app described as using React and Chat Engine, with live messaging, typing indicators, and read receipts.</p><div class="tag-list"><span>React</span><span>Chat Engine</span></div><div class="project-actions"><button class="text-action" type="button" data-open-project="chat">Project notes <span aria-hidden="true">↗</span></button><a class="text-action" href="https://drive.google.com/file/d/16mm2QfMqx17nbExz8j87MOfvkptyLtI9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open demo <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-art art-vision"><div class="project-art-head"><span>COMPUTER VISION</span><span>03</span></div><div class="vision-frame"><div class="face-outline"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="face-mask"></span></div><span class="scan-line"></span><span class="vision-label">MASK DETECTED</span><span class="corner corner-tl"></span><span class="corner corner-tr"></span><span class="corner corner-bl"></span><span class="corner corner-br"></span></div><span class="art-index">C—03</span></div>
+            <div class="project-info"><div class="project-meta"><span>COMPUTER VISION</span><span>03 / 03</span></div><h3>Real-time face mask detection</h3><p>A computer-vision project described as using OpenCV and MobileNet, with a related research publication.</p><div class="tag-list"><span>OpenCV</span><span>MobileNet</span></div><div class="project-actions"><button class="text-action" type="button" data-open-project="vision">Project notes <span aria-hidden="true">↗</span></button><a class="text-action" href="https://link.springer.com/chapter/10.1007/978-981-16-7330-6_39" target="_blank" rel="noopener noreferrer">Read publication <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+        <p class="work-footnote"><span aria-hidden="true">↗</span> Project links open external sites. Source repositories can be linked here as they’re added to GitHub.</p>
+      </div>
+    </section>
 
-</div></div></section>
-<section class="section border-top" id="skills"><div class="wrap two-col"><div><p class="eyebrow">03 / TOOLKIT</p><h2>Skills &<br>approach.</h2></div><div class="section-copy"><p class="lead">A flexible toolkit, guided by the problem at hand.</p><p>Add the languages, frameworks, platforms, and practices you genuinely use. The groups below are a starting point—edit them to match your experience.</p><div class="skill-group"><div><span>01</span><strong>Languages</strong></div><p><i>Add language</i><i>Add language</i><i>Add language</i></p></div><div class="skill-group"><div><span>02</span><strong>Tools & platforms</strong></div><p><i>Git / GitHub</i><i>Add tool</i><i>Add platform</i></p></div><div class="skill-group"><div><span>03</span><strong>Practices</strong></div><p><i>Debugging</i><i>Problem solving</i><i>Documentation</i></p></div></div></div></section>
-<section class="contact-section border-top" id="contact"><div class="wrap contact-grid"><div><p class="eyebrow">04 / CONTACT</p><h2>Have a good problem<br>to solve?</h2><p class="contact-copy">I’m always happy to connect about software, collaboration, or interesting ideas. Reach out using one of the links.</p></div><div class="contact-links"><a href="mailto:mansoorshaik0412@gmail.com"><span>Email</span><strong>mansoorshaik0412@gmail.com</strong><b>↗</b></a><a href="https://github.com/SMan786786" target="_blank" rel="noopener"><span>GitHub</span><strong>@SMan786786</strong><b>↗</b></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Add your profile</strong><b>↗</b></a></div></div></section>
-</main>
-<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">MS</span><span>Mansoor Shaik</span></a><p>Designed with care. Built to keep improving.</p><a href="#home">Back to top ↑</a><span>© <span id="year">2026</span> Mansoor Shaik</span></div></footer>
-</body></html>
+    <section class="section section-toolkit" id="skills" aria-labelledby="skills-title">
+      <div class="wrap two-column">
+        <div class="section-heading reveal"><p class="eyebrow">03 / TOOLKIT</p><h2 id="skills-title">Tools are useful.<br><em>Thinking matters.</em></h2><p class="section-aside toolkit-intro">A practical foundation, with room to keep learning.</p></div>
+        <div class="toolkit-list reveal">
+          <div class="toolkit-row"><span class="toolkit-index">01</span><div><h3>Web development</h3><p>React · HTML · CSS · JavaScript</p></div><span class="toolkit-symbol" aria-hidden="true">↗</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">02</span><div><h3>Data & computer vision</h3><p>OpenCV · MobileNet</p></div><span class="toolkit-symbol" aria-hidden="true">↗</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">03</span><div><h3>Tools & platforms</h3><p>Git · GitHub · Sanity · Stripe</p></div><span class="toolkit-symbol" aria-hidden="true">↗</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">04</span><div><h3>Working principles</h3><p>Problem solving · Iteration · Documentation</p></div><span class="toolkit-symbol" aria-hidden="true">↗</span></div>
+          <p class="toolkit-note">Skills shown here reflect the technologies referenced in the current project descriptions and portfolio. This is not a proficiency ranking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-github" id="github" aria-labelledby="github-title">
+      <div class="wrap github-panel reveal">
+        <div class="github-copy"><p class="eyebrow">04 / OPEN SOURCE FOOTPRINT</p><h2 id="github-title">Work in <em>progress.</em></h2><p>Public GitHub profile data, loaded live from GitHub. Numbers may be unavailable if the service is rate-limited.</p><a class="button button-light" href="https://github.com/SMan786786" target="_blank" rel="noopener noreferrer">Visit GitHub profile <span aria-hidden="true">↗</span></a></div>
+        <div class="github-stats" aria-live="polite" aria-busy="true" id="github-stats"><div class="stat-item"><span>PUBLIC REPOSITORIES</span><strong>—</strong><small>Loading from GitHub</small></div><div class="stat-item"><span>FOLLOWERS</span><strong>—</strong><small>Loading from GitHub</small></div><div class="stat-item"><span>PUBLIC STARS</span><strong>—</strong><small>Loading from GitHub</small></div><p class="stats-status" id="stats-status">Fetching public profile data…</p></div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-layout">
+        <div class="section-heading reveal"><p class="eyebrow">05 / SAY HELLO</p><h2 id="contact-title">Let’s make<br>something <em>useful.</em></h2><p class="contact-description">Have a question, an idea, or an interesting problem? I’d be glad to hear from you.</p></div>
+        <div class="contact-card reveal"><span class="contact-label">EMAIL IS THE BEST PLACE TO START</span><a class="contact-email" href="mailto:mansoorshaik0412@gmail.com">mansoorshaik0412@gmail.com</a><div class="contact-actions"><a class="button button-dark" href="mailto:mansoorshaik0412@gmail.com">Send an email <span aria-hidden="true">↗</span></a><button class="button button-outline" id="copy-email" type="button" data-email="mansoorshaik0412@gmail.com"><span class="copy-icon" aria-hidden="true">▢</span> <span id="copy-label">Copy email</span></button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p><div class="contact-divider"></div><a class="social-link" href="https://github.com/SMan786786" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>@SMan786786</strong><span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">MS</span><span>Mansoor Shaik<span class="brand-period">.</span></span></a><p>Made thoughtfully. Improved continuously.</p><a href="#home" class="back-top">Back to top ↑</a><span class="copyright">© <span id="year">2026</span> Mansoor Shaik</span></div></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner"><div class="dialog-topline"><span>PROJECT NOTES</span><button type="button" class="dialog-close" aria-label="Close project details">×</button></div><p class="eyebrow" id="dialog-category">PROJECT</p><h2 id="dialog-title">Project title</h2><p id="dialog-description"></p><div class="dialog-stack"><span>TECHNOLOGY</span><div id="dialog-tags" class="tag-list"></div></div><div class="dialog-actions"><a id="dialog-link" class="button button-dark" href="#" target="_blank" rel="noopener noreferrer">Open project <span aria-hidden="true">↗</span></a><button type="button" class="button button-outline dialog-close">Close</button></div><p class="dialog-footnote">Details reflect the current portfolio notes; source code can be added when a matching public repository is available.</p></div>
+  </dialog>
+</body>
+</html>
